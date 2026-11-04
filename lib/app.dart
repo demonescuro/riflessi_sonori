@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'screens/home_screen.dart';
+import 'theme/app_theme.dart';
 
 class RiflessiSonoriApp extends StatelessWidget {
   const RiflessiSonoriApp({super.key});
@@ -9,13 +11,7 @@ class RiflessiSonoriApp extends StatelessWidget {
     return MaterialApp(
       title: 'Riflessi Sonori',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.blueGrey,
-          brightness: Brightness.dark,
-        ),
-        useMaterial3: true,
-      ),
+      theme: AppTheme.chiaro,
       home: const HomeScreen(),
     );
   }
